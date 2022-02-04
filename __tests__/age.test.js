@@ -48,4 +48,8 @@ describe('UserLife', () => {
   test("should return how long a user has lived past their life expectancy", () => {
     expect(old.timePastExpectancy()).toEqual(10);
   });
+  
+  test("should return how long a user has left based off of their life expectancy", () => {
+    expect(user.timePastExpectancy()).toEqual(70);
+  });
 });
