@@ -28,6 +28,8 @@ export default class UserLife {
     return Math.floor((this.lifeExpectancy / 11.86) - (this.age / 11.86));
   }
   timePastExpectancy() {
-    
+    if (this.age > this.lifeExpectancy) {
+      return Math.floor(this.age - this.lifeExpectancy);
+    }
   }
 }
