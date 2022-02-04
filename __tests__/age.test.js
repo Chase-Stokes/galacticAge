@@ -10,4 +10,8 @@ describe('UserLife', () => {
   test('should create an object with the properties of the constructor', () => {
     expect(user).toEqual({"age": 10, "lifeExpectancy": 80})
   });
+
+  test("should return the objects age in mercury years", () => {
+    expect(user.mercury()).toEqual(41)
+  })
 })

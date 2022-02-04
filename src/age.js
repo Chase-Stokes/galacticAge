@@ -3,4 +3,7 @@ export default class UserLife {
     this.age = age;
     this.lifeExpectancy = 80;
   }
+  mercury() {
+    
+  }
 }
