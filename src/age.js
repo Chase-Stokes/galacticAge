@@ -18,4 +18,7 @@ export default class UserLife {
   timeLeftMercury() {
     return Math.floor((this.lifeExpectancy / .24) - (this.age / .24));
   }
+  timeLeftVenus() {
+    
+  }
 }
