@@ -22,6 +22,6 @@ export default class UserLife {
     return Math.floor((this.lifeExpectancy / .62) - (this.age / .62));
   }
   timeLeftMars() {
-    
+    return Math.floor((this.lifeExpectancy / 1.88) - (this.age / 1.88));
   }
 }
