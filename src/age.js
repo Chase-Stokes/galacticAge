@@ -24,4 +24,7 @@ export default class UserLife {
   timeLeftMars() {
     return Math.floor((this.lifeExpectancy / 1.88) - (this.age / 1.88));
   }
+  timeLeftJupiter() {
+    
+  }
 }

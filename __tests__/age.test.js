@@ -38,4 +38,8 @@ describe('UserLife', () => {
   test("should tell the user their expected time left on mars", () => {
     expect(user.timeLeftMars()).toEqual(37);
   });
+  
+  test("should tell the user their expected time left on jupiter", () => {
+    expect(user.timeLeftJupiter()).toEqual(5);
+  });
 })
