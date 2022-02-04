@@ -1,0 +1,49 @@
+body {
+  background-image: url(https://chandra.harvard.edu/photo/2009/galactic/galactic_lg.jpg);
+  padding: 8em;
+}
+
+.header {
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: auto;
+  padding: 2em;
+  margin-bottom: 3em;
+  color: aliceblue;
+  background-size: cover;
+}
+
+label {
+  margin-bottom: .5em;
+}
+input {
+  margin-bottom: .5em;
+}
+button {
+  margin-bottom: .5em;
+}
+
+.box {
+  color: aliceblue;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(12, 12, 12, 0.4);
+  width: 25em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.box1 {
+  color: aliceblue;
+  text-align: center;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(12, 12, 12, 0.4);
+  width: 25em;
+}
+
+
