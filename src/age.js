@@ -1,5 +1,6 @@
 export default class UserLife {
-  constructor() {
-
+  constructor(age) {
+    this.age = age;
+    this.lifeExpectancy = 80;
   }
 }
