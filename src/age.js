@@ -10,6 +10,6 @@ export default class UserLife {
     return Math.floor(this.age / .62);
   }
   mars() {
-    
+    return Math.floor(this.age / 1.88);
   }
 }
