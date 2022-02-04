@@ -27,11 +27,11 @@ export default class UserLife {
   timeLeftJupiter() {
     return Math.floor((this.lifeExpectancy / 11.86) - (this.age / 11.86));
   }
-  timePastExpectancy() {
-    if (this.age > this.lifeExpectancy) {
-      return Math.floor(this.age - this.lifeExpectancy);
-    } else {
-      return Math.floor(this.lifeExpectancy - this.age);
-    }
+}
+export function timePastExpectancy(age, expectancy) {
+  if (age > expectancy) {
+    return Math.floor(age - expectancy);
+  } else {
+    return Math.floor(expectancy - age);
   }
 }

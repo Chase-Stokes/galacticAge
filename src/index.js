@@ -10,9 +10,13 @@ $("#ageForm").submit(function(event){
   console.log(age);
   $(".displayEarthAge").html(age);
   let user = new UserLife(age);
-  $(".displayMercuryAge").html(user.mercury());
-  $(".displayVenusAge").html(user.venus());
-  $(".displayMarsAge").html(user.mars());
-  $(".displayJupiterAge").html(user.jupiter());
+  let ageMercury = user.mercury();
+  let ageVenus = user.venus();
+  let ageMars = user.mars();
+  let ageJupiter = user.jupiter();
+  $(".displayMercuryAge").html(ageMercury);
+  $(".displayVenusAge").html(ageVenus);
+  $(".displayMarsAge").html(ageMars);
+  $(".displayJupiterAge").html(ageJupiter);
 
 });
