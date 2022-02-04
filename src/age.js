@@ -9,4 +9,7 @@ export default class UserLife {
   venus() {
     return Math.floor(this.age / .62);
   }
+  mars() {
+    
+  }
 }
