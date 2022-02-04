@@ -21,4 +21,7 @@ export default class UserLife {
   timeLeftVenus() {
     return Math.floor((this.lifeExpectancy / .62) - (this.age / .62));
   }
+  timeLeftMars() {
+    
+  }
 }
