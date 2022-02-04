@@ -4,6 +4,6 @@ export default class UserLife {
     this.lifeExpectancy = 80;
   }
   mercury() {
-    
+    return Math.floor(this.age / .24)
   }
 }
