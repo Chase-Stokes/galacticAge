@@ -26,4 +26,8 @@ describe('UserLife', () => {
   test("should return the objects age in jupiter years", () => {
     expect(user.jupiter()).toEqual(0);
   });
+
+  test("should tell the user their expected time left on mercury", () => {
+    expect(user.timeLeftMercury()).toEqual(291);
+  });
 })

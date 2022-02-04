@@ -15,4 +15,7 @@ export default class UserLife {
   jupiter() {
     return Math.floor(this.age / 11.86);
   }
+  timeLeftMercury() {
+    
+  }
 }
