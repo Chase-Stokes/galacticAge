@@ -21,7 +21,7 @@ _logic to determine age on other planets_
 
 ## Description
 
-_An epicodus project to write business logic and test TDD. The logic should include code to determine age on other planets, and the tests should have 100% line coverage._
+_An epicodus project to write business logic and test use TDD. The logic should include code to determine age on other planets, and the tests should have 100% line coverage._
 
 ## Setup/Installation Requirements
 
@@ -32,6 +32,7 @@ _An epicodus project to write business logic and test TDD. The logic should incl
 5. Test code in terminal by typing "npm test"
 6. Build the display environment in the terminal by typing "npm run build"
 7. Run the environment in your default web browser by typing "npm run start" in the terminal
+8. If you want to check out our testing and line coverage. Type "npm test" in the terminal.
 
 ## Known Bugs
 
