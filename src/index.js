@@ -2,7 +2,8 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import UserLife, { timePastExpectancy } from './age.js';
+import UserLife from './age.js';
+import timePastExpectancy from './overtime.js';
 
 $("#ageForm").submit(function(event){
   event.preventDefault();

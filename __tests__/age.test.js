@@ -1,12 +1,11 @@
 import UserLife from "../src/age.js";
 
+
 describe('UserLife', () => {
 
   let user;
-  let old;
   beforeEach(() => {
     user = new UserLife(10, 80);
-    old = new UserLife(90, 80);
   })
 
   test('should create an object with the properties of the constructor', () => {
@@ -45,11 +44,4 @@ describe('UserLife', () => {
     expect(user.timeLeftJupiter()).toEqual(5);
   });
 
-  test("should return how long a user has lived past their life expectancy", () => {
-    expect(old.timePastExpectancy()).toEqual(10);
-  });
-  
-  test("should return how long a user has left based off of their life expectancy", () => {
-    expect(user.timePastExpectancy()).toEqual(70);
-  });
 });
