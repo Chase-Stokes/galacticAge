@@ -8,7 +8,6 @@ import timePastExpectancy from './overtime.js';
 $("#ageForm").submit(function(event){
   event.preventDefault();
   let age = $("#age").val();
-  console.log(age);
   $(".displayEarthAge").html(age);
   let user = new UserLife(age);
   let ageMercury = user.mercury();
