@@ -23,9 +23,19 @@ $("#ageForm").submit(function(event){
   let exVenus = expectancy.venus();
   let exMars = expectancy.mars();
   let exJupiter = expectancy.jupiter();
-  $(".earthYearsLeft").html(timePastExpectancy(user.age, user.lifeExpectancy));
-  $(".mercuryYearsLeft").html(timePastExpectancy(ageMercury, exMercury));
-  $(".venusYearsLeft").html(timePastExpectancy(ageVenus, exVenus));
-  $(".marsYearsLeft").html(timePastExpectancy(ageMars, exMars));
-  $(".jupiterYearsLeft").html(timePastExpectancy(ageJupiter, exJupiter));
+  if (user.age < user.lifeExpectancy) {
+    $(".bottomBox").show();
+    $(".earthYearsLeft").html(timePastExpectancy(user.age, user.lifeExpectancy));
+    $(".mercuryYearsLeft").html(timePastExpectancy(ageMercury, exMercury));
+    $(".venusYearsLeft").html(timePastExpectancy(ageVenus, exVenus));
+    $(".marsYearsLeft").html(timePastExpectancy(ageMars, exMars));
+    $(".jupiterYearsLeft").html(timePastExpectancy(ageJupiter, exJupiter));
+  } else {
+    $(".bottomBox1").show();
+    $(".earthOvertime").html(timePastExpectancy(user.age, user.lifeExpectancy));
+    $(".mercuryOvertime").html(timePastExpectancy(ageMercury, exMercury));
+    $(".venusOvertime").html(timePastExpectancy(ageVenus, exVenus));
+    $(".marsOvertime").html(timePastExpectancy(ageMars, exMars));
+    $(".jupiterOvertime").html(timePastExpectancy(ageJupiter, exJupiter));
+  }
 });
