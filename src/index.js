@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import UserLife from './age.js';
+import UserLife, { timePastExpectancy } from './age.js';
 
 $("#ageForm").submit(function(event){
   event.preventDefault();
@@ -18,5 +18,14 @@ $("#ageForm").submit(function(event){
   $(".displayVenusAge").html(ageVenus);
   $(".displayMarsAge").html(ageMars);
   $(".displayJupiterAge").html(ageJupiter);
-
+  let expectancy = new UserLife(user.lifeExpectancy);
+  let exMercury = expectancy.mercury();
+  let exVenus = expectancy.venus();
+  let exMars = expectancy.mars();
+  let exJupiter = expectancy.jupiter();
+  $(".earthYearsLeft").html(timePastExpectancy(user.age, user.lifeExpectancy));
+  $(".mercuryYearsLeft").html(timePastExpectancy(ageMercury, exMercury));
+  $(".venusYearsLeft").html(timePastExpectancy(ageVenus, exVenus));
+  $(".marsYearsLeft").html(timePastExpectancy(ageMars, exMars));
+  $(".jupiterYearsLeft").html(timePastExpectancy(ageJupiter, exJupiter));
 });
